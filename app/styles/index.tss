@@ -1,0 +1,48 @@
+"#mainTemplate" : {
+	height: 310,
+	selectionStyle : Titanium.UI.iPhone.ListViewCellSelectionStyle.NONE
+}
+"#rowContainer" : {
+	height: 310,
+	layout : 'vertical'
+}
+"#header" : {
+	height : 60,
+	top : 10
+}
+"#avatar" : {
+  width : 40,
+  height : 40,
+  left : 3,
+  top : 2,
+  borderRadius : 20
+}
+"#title" : {
+  left : 100,
+  top : 5,
+  font : {fontWeight : 'bold', fontSize : 18}
+}
+"#imageContainer" : {
+	height : 150
+}
+"#pic" : {
+  width : 320,
+  height : Ti.UI.SIZE
+}
+"#footer" : {
+  width : Ti.UI.FILL,
+  height : 100,
+  layout : 'vertical'
+}
+"#bodyText" : {
+  font : {fontWeight : 'normal', fontSize : 13},
+  width: 310,
+  textAlign : Titanium.UI.TEXT_ALIGNMENT_LEFT
+}
+"#bookMark" : {
+  width : 30,
+  height : 30
+}
+"#shareButton" : {
+  
+}

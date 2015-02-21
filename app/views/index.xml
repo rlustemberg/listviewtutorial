@@ -1,0 +1,32 @@
+<Alloy>
+    <NavigationWindow>
+        <Window class="container" title="ListView Tutorial" onOpen="setListItems">
+            <ListView onItemclick="listItemHandler" defaultItemTemplate="mainTemplate">
+                <Templates>
+                    <ItemTemplate name="mainTemplate" id="mainTemplate">
+                        <View id="rowContainer">
+                            <View id="header">
+                                <ImageView bindId="avatar" id="avatar"></ImageView>
+                                <Label bindId="title" id="title"></Label>
+                            </View>
+                            <View id="imageContainer">
+                                <ImageView bindId="pic" id="pic"></ImageView>
+                            </View>
+                            <View id="footer">
+                                <Label bindId="bodyText" id="bodyText"></Label>
+                                <View>
+                                    <View bindId="bookMark" id="bookMark" onClick="buttonEventHandler"></View>
+                                </View>
+                            </View>
+                        </View>
+                    </ItemTemplate>
+                </Templates>
+                <ListSection id="listSection" headerTitle="Feed">
+                    <ListItem pic:image="/images/landscape.jpg" avatar:image="/images/colbert.jpg" title:text="Great Landscape" bodyText:text="ListView is a view group that displays a list of scrollable items" bookMark:backgroundImage="/images/star_unselected.png"/>
+                    <ListItem pic:image="/images/landscape2.jpg" avatar:image="/images/oreilly.jpg" title:text="Mine's better" bodyText:text="ListView is a view group that displays a list of scrollable items" bookMark:backgroundImage="/images/star_unselected.png"/>
+                    <ListItem pic:image="/images/landscape3.jpg" avatar:image="/images/colbert.jpg" title:text="What about this?" bodyText:text="ListView is a view group that displays a list of scrollable items" bookMark:backgroundImage="/images/star_unselected.png"/>
+                </ListSection>
+            </ListView>
+        </Window>
+    </NavigationWindow>
+</Alloy>
